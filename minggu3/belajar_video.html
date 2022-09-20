@@ -1,0 +1,90 @@
+<!--
+    NIM : A11.2022.14741 / RZ
+    DATE : 9/20/2022
+    MATKUL : PEMPROGRAMAN BERBASIS WEB
+    MATERI : BELAJAR HTML VIDEO BESERTA ELEMENT
+-->
+<!DOCTYPE html>
+<head>
+    <title>Belajar HTML Video</title>
+</head>
+<body>
+    <center>
+    <h2>Belajar HTML Video | Pemprograman Berbasis Web</h2>
+<button onclick="muterVid()">Play</button>
+<button onclick="mandekVid()">Pause</button>
+<button onclick="gedeinVid()">Besarin Ukurannya</button>
+<button onclick="kecilinVid()">Kecilin Ukurannya</button>
+<button onclick="normalinVid()">Normalin Ukurannya</button>
+<button onclick="hidupinCon()">Aktifkan Controls</button>
+<button onclick="matiinCon()">Matiin Controls</button>
+<button onclick="hidupinloop()">Aktifkan Loop</button>
+<button onclick="matiinloop()">Matiin Loop</button>
+<button onclick="cekloop()">Cek Loop</button>
+<button onclick="durasinya()">Cek Durasi</button>
+<button onclick="muteVid()">Mute Vid</button>
+<button onclick="unmuteVid()">Unmute Vid</button>
+
+    <br><br>
+    <video id="rezavid">
+        <source src="media/openingvid.mp4" type="video/mp4">
+        Browser tidak mendukung sob.
+    </video>
+    </center>
+    <script>
+var reza = document.getElementById("rezavid");
+
+//fungsi untuk muter vidnya
+function muterVid(){
+    reza.play();
+}
+//fungsi untuk pause vidnya
+function mandekVid(){
+    reza.pause();
+}
+//fungsi untuk gedein ukuran vidnya
+function gedeinVid(){
+    reza.width = 650;
+}
+//fungsi untuk kecilin ukuran vidnya
+function kecilinVid(){
+    reza.width = 350;
+}
+//fungsi untuk normalin ukuran vidnya
+function normalinVid(){
+    reza.width = 450;
+}
+//fungsi untuk aktifin fitur controls vidnya
+function hidupinCon(){
+    reza.controls = true;
+}
+//fungsi untuk matiin fitur controls vidnya
+function matiinCon(){
+    reza.controls = false;
+}
+//fungsi untuk aktifin fitur loop vidnya
+function hidupinloop(){
+    reza.loop = true;
+}
+//fungsi untuk matiin fitur loop vidnya
+function matiinloop(){
+    reza.loop = false;
+}
+//fungsi untuk cek status loop, true = aktif, false = nonaktif
+function cekloop(){
+    alert(reza.loop);
+}
+//fungsi untuk cek durasi vidnya
+function durasinya(){
+    alert(reza.duration);
+}
+//fungsi untuk mute/silent vidnya
+function muteVid(){
+    reza.muted = true;
+}
+//fungsi untuk unmute/unslient vidnya
+function unmuteVid(){
+    reza.muted = false;
+}
+    </script>
+</body>
