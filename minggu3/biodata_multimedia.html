@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<head>
+    <title>Biodata + Multimedia element HTML</title>
+    <link rel="icon" type="image/x-icon" href="media/favicon.png">
+    <meta charset="UTF-8">
+    <meta name="description" content="WEB BIODATA DAN JADWAL MATA KULIAH">
+    <meta name="keywords" content="BIODATA + TABLE KRS WITH HTML">
+    <meta name="author" content="A11.2022.14741">
+    <meta name="viewport" content="width=device-width, initial-scale=1,0">
+    <style>
+        body {
+            background: url("lokasinya")no-repeat center center fixed ;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+        }
+        .ikimatkull{
+            background-color: whitesmoke;
+            font-family:'Courier New';
+            border-color: blue;
+        }
+        .biodata{
+            font-family:'Courier New';
+            background-color: whitesmoke;
+        }
+    </style>
+</head>
+<body>
+    <h1 align="center">Biodata Mahasiswa</h1>
+    <hr width="550">
+    <table class="biodata" align="center" width="600">
+        <tr>
+            <td> Nama : Mohammad Reza</td>
+        </tr>
+        <tr>
+            <td> NIM : A11.2022.14741</td>
+            <td align="center" rowspan="5"><embed src="file_foto.html" width="160"></td>
+        </tr>
+        <tr>
+            <td> Fakultas : Fakultas Ilmu Komputer</td>
+        </tr>
+        <tr>
+            <td>Prodi : Teknik Informatika</td>
+        </tr>
+        <tr>
+            <td> Dosen Wali : Etika Kartikadarma, M.Kom</td>
+        </tr>
+        <tr>
+            <td> Status : Aktif - Semester 1</td>
+        </tr>
+        <tr>
+            <td> Email Mahasiswa : 1112214741@mhs.dinus.ac.id</td>
+        </tr>
+        <tr>
+            <td> Sosial media : <a href="https://github.com/mrzptra" target="_blank"><img alt="GITHUB REZA" src="media/github.png" width="16"></a> <a href="https://instagram.com/rzptraaa" target="_blank"><img alt="INSTA REZA" src="media/insta.png" width="16"></a> <a href="https://api.whatsapp.com/send?phone=6281225948383&text=bbi" target="_blank"><img alt="INSTA REZA" src="media/wa.png" width="16"></a></td>
+        </tr>
+    </table>
+    <hr width="550">
+    <h1 align="center">DAFTAR MATKUL A11.4119</h1>
+    <table class="ikimatkull" align="center" border="1" width="550">
+        <tr>
+            <th>No</th>    
+            <th>Kode MK</th>
+            <th>Nama Matkul</th>
+            <th>SKS</th>
+            <th>Kelp</th>
+        </tr>
+        <tr>
+            <td>1.</td>
+            <td>A11.54101</td>
+            <td>KALKULUS</td>
+            <td>4</td>
+            <td>A11.4119</td>
+        </tr>
+        <tr>
+            <td>2.</td>
+            <td>A11.54105</td>
+            <td>DASAR PEMPROGRAMAN</td>
+            <td>4</td>
+            <td>A11.4119</td>
+        </tr>
+        <tr>
+            <td>3.</td>
+            <td>A11.54302</td>
+            <td>MATEMATIKA DISKRIT</td>
+            <td>3</td>
+            <td>A11.4119</td>
+        </tr>
+        <tr>
+            <td>4.</td>
+            <td>A11.54314</td>
+            <td>PEMPROGRAMAN BERBASIS WEB</td>
+            <td>2</td>
+            <td>A11.4119</td>
+        </tr>
+        <tr>
+            <td>5.</td>
+            <td>A11.54403</td>
+            <td>ORGANISASI DAN ARSITEKTUR KOMPUTER</td>
+            <td>3</td>
+            <td>A11.4119</td>
+        </tr>
+        <tr>
+            <td>6.</td>
+            <td>AF201704</td>
+            <td>DASAR DASAR KOMPUTASI</td>
+            <td>2</td>
+            <td>A11.4119</td>
+        </tr>
+        <tr>
+            <td>7.</td>
+            <td>U201704</td>
+            <td>PENGANTAR TEKNOLOGI INFORMASI</td>
+            <td>2</td>
+            <td>A11.4119</td>
+        </tr>
+    </table><br><br>
+    <center>
+    <button onclick="muterVid()">Play</button>
+    <button onclick="mandekVid()">Pause</button>
+    <button onclick="gedeinVid()">Besarin Ukurannya</button>
+    <button onclick="kecilinVid()">Kecilin Ukurannya</button>
+    <button onclick="normalinVid()">Normalin Ukurannya</button>
+    <button onclick="hidupinCon()">Aktifkan Controls</button>
+    <br>
+    <button onclick="matiinCon()">Matiin Controls</button>
+    <button onclick="hidupinloop()">Aktifkan Loop</button>
+    <button onclick="matiinloop()">Matiin Loop</button>
+    <button onclick="cekloop()">Cek Loop</button>
+    <button onclick="durasinya()">Cek Durasi</button>
+    <button onclick="muteVid()">Mute Vid</button>
+    <button onclick="unmuteVid()">Unmute Vid</button>
+        <br><br>
+    <video id="rezavid">
+        <source src="media/openingvid.mp4" type="video/mp4" width="420">
+    </video></center>
+    <br><br>
+    <center>
+        <button onclick="muterAudio()">Play</button>
+        <button onclick="mandekAudio()">Pause</button>
+        <button onclick="loopONAudio()">Aktifkan Loop</button>
+        <button onclick="loopOFFAudio()">Matikan Loop</button>
+        <button onclick="controlsONAudio()">Aktifkan Controls</button>
+        <button onclick="controlsOFFAudio()">Matikan Controls</button>
+        <button onclick="durasiAudio()">Cek Durasi</button>
+        <br><br>
+    <audio id="rezaaudio">
+        <source src="media/hujan.mp3" type="audio/mpeg">
+        Browser tidak support bosku.
+    </audio>
+    </center>
+    <br><br>
+    <center>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/s-ctjMcD_Zk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </center>
+   <script>
+        var reza2 = document.getElementById("rezaaudio");
+        
+        function muterAudio(){
+            reza2.play();
+        }
+        function mandekAudio(){
+            reza2.pause();
+        }
+        function loopONAudio(){
+            reza2.loop = true;
+        }
+        function loopOFFAudio(){
+            reza2.loop = false;
+        }
+        function controlsONAudio(){
+            reza2.controls = true;
+        }
+        function controlsOFFAudio(){
+            reza2.controls = false;
+        }
+        function durasiAudio(){
+            alert(reza2.duration);
+        }
+    </script>
+    <script>
+        var reza = document.getElementById("rezavid");
+        
+        //fungsi untuk muter vidnya
+        function muterVid(){
+            reza.play();
+        }
+        //fungsi untuk pause vidnya
+        function mandekVid(){
+            reza.pause();
+        }
+        //fungsi untuk gedein ukuran vidnya
+        function gedeinVid(){
+            reza.width = 650;
+        }
+        //fungsi untuk kecilin ukuran vidnya
+        function kecilinVid(){
+            reza.width = 350;
+        }
+        //fungsi untuk normalin ukuran vidnya
+        function normalinVid(){
+            reza.width = 450;
+        }
+        //fungsi untuk aktifin fitur controls vidnya
+        function hidupinCon(){
+            reza.controls = true;
+        }
+        //fungsi untuk matiin fitur controls vidnya
+        function matiinCon(){
+            reza.controls = false;
+        }
+        //fungsi untuk aktifin fitur loop vidnya
+        function hidupinloop(){
+            reza.loop = true;
+        }
+        //fungsi untuk matiin fitur loop vidnya
+        function matiinloop(){
+            reza.loop = false;
+        }
+        //fungsi untuk cek status loop, true = aktif, false = nonaktif
+        function cekloop(){
+            alert(reza.loop);
+        }
+        //fungsi untuk cek durasi vidnya
+        function durasinya(){
+            alert(reza.duration);
+        }
+        //fungsi untuk mute/silent vidnya
+        function muteVid(){
+            reza.muted = true;
+        }
+        //fungsi untuk unmute/unslient vidnya
+        function unmuteVid(){
+            reza.muted = false;
+        }
+            </script>
+</body>
