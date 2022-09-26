@@ -1,0 +1,125 @@
+<!--
+    Nama : Rz
+    NIM : A11.2022.14741
+    TANGGAL : 27/9/2022
+    MATKULL : PEMPROGRAMAN BERBASIS WEB
+-->
+<!DOCTYPE html>
+<head>
+    <title>Registrasi FORM - PPDB 2022</title>
+    <style>
+        .h2form{
+            text-align: center;
+            background-color: blanchedalmond;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .tableform{
+            background-color: blanchedalmond;
+            font-family: 'Courier New', Courier, monospace;
+        }
+    </style>
+</head>
+<body>
+    <h2 class="h2form">Registrasi FORM - PPDB 2022</h2>
+    <form method="POST" action="prosesppdb.php">
+        <table class="tableform">
+            <th><b>DATA SEKOLAH</b></th>
+            <tr>
+                <td>NISN</td>
+                <td>:</td>
+                <td><input type="number" name="nisn" placeholder="Input NISN"></td>
+            </tr>
+            <tr>
+                <td>Asal sekolah</td>
+                <td>:</td>
+                <td><input type="text" name="asalsekolah" placeholder="Input sekolah"></td>
+            </tr>
+            <tr>
+                <td>Tahun lulus</td>
+                <td>:</td>
+                <td><input type="number" name="tahunlulus" placeholder="Input tahun lulus"></td>
+            </tr>
+            <th><b>DATA CALON PESERTA</b></th>
+            <tr>
+                <td>Nama lengkap</td>
+                <td>:</td>
+                <td><input type="text" name="nama" placeholder="Input nama lengkap"></td>
+            </tr>
+            <tr>
+                <td>NIK</td>
+                <td>:</td>
+                <td><input type="number" name="nik" placeholder="Input NIK"></td>
+            </tr>
+            <tr>
+                <td>Tempat/Tanggal lahir</td>
+                <td>:</td>
+                <td><input type="date" name="ttl"></td>
+            </tr>
+            <tr>
+                <td>Jenis kelamin</td>
+                <td>:</td>
+                <td><input type="text" name="jk" placeholder="Input jenis kelamin"></td>
+            </tr>
+            <tr>
+                <td>Alamat</td>
+                <td>:</td>
+                <td><input type="text" name="desa" placeholder="Input desa"></td>
+                <td><input type="text" name="kec" placeholder="Input kecamatan"></td>
+                <td><input type="text" name="kab" placeholder="Input kabupaten"></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td>:</td>
+                <td><input type="email" name="email" placeholder="Input email"></td>
+            </tr>
+            <th><b>DATA ORANG TUA</b></th>
+            <tr>
+                <td>Nomor kartu keluarga</td>
+                <td>:</td>
+                <td><input type="number" name="nokk" placeholder="Input nomor KK"></td>
+            </tr>
+            <tr>
+                <td>Nama ayah</td>
+                <td>:</td>
+                <td><input type="text" name="namaayah" placeholder="Input nama ayah"></td>
+            </tr>
+            <tr>
+                <td>Agama</td>
+                <td>:</td>
+                <td><input type="text" name="agamaayah" placeholder="Input agama"></td>
+            </tr>
+            <tr>
+                <td>Pekerjaan</td>
+                <td>:</td>
+                <td><input type="text" name="pekerjaanayah" placeholder="Input pekerjaan"></td>
+            </tr>
+            <tr>
+                <td>Nama ibu</td>
+                <td>:</td>
+                <td><input type="text" name="namaibu" placeholder="Input nama ibu"></td>
+            </tr>
+            <tr>
+                <td>Agama</td>
+                <td>:</td>
+                <td><input type="text" name="agamaibu" placeholder="Input agama"></td>
+            </tr>
+            <tr>
+                <td>Pekerjaan</td>
+                <td>:</td>
+                <td><input type="text" name="pekerjaanibu" placeholder="Input pekerjaan"></td>
+            </tr>
+            <tr>
+                <td>Alamat Orang Tua</td>
+                <td>:</td>
+                <td><input type="text" name="desaortu" placeholder="Input desa"></td>
+                <td><input type="text" name="kecortu" placeholder="Input kecamatan"></td>
+                <td><input type="text" name="kabortu" placeholder="Input kabupaten"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td><button type="submit" name="submit">SUBMIT</button> <button type="reset" name="reset">RESET</button></td>
+            </tr>
+        </table>
+    </form>
+</body>
