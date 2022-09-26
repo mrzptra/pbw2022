@@ -1,3 +1,9 @@
+<!--
+    Nama : Rz
+    NIM : A11.2022.14741
+    TANGGAL : 27/9/2022
+    MATKULL : PEMPROGRAMAN BERBASIS WEB
+-->
 <?php
 //ngambil data dari form sebelumnya
 $nisn = $_POST['nisn'];
@@ -25,12 +31,6 @@ $kecortu = $_POST['kecortu'];
 $kabortu = $_POST['kabortu'];
 
 ?>
-<!--
-    Nama : Rz
-    NIM : A11.2022.14741
-    TANGGAL : 27/9/2022
-    MATKULL : PEMPROGRAMAN BERBASIS WEB
--->
 <!DOCTYPE html>
 <head>
     <title>Registrasi FORM - PPDB 2022</title>
