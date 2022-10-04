@@ -1,0 +1,65 @@
+<!--
+    NIM : A11.2022.14741 / RZ
+    DATE : 10/4/2022
+    MATKUL : PEMPROGRAMAN BERBASIS WEB
+    MATERI : KREASIKAN TUGAS MINGGU 4 
+-->
+<!DOCTYPE html>
+<head>
+    <title>Kreasikan audio tag</title>
+    <link rel="icon" type="image/x-icon" href="media/favicon.png">
+    <meta charset="UTF-8">
+    <meta name="description" content="Belajar html tag audio">
+    <meta name="keywords" content="Belajar audio HTML">
+    <meta name="author" content="A11.2022.14741">
+    <meta name="viewport" content="width=device-width, initial-scale=1,0">
+   <h1>Belajar tag audio</h1>
+    <button onclick="muterAudio()">Play</button>
+        <button onclick="mandekAudio()">Pause</button>
+        <button onclick="loopONAudio()">Aktifkan Loop</button>
+        <button onclick="loopOFFAudio()">Matikan Loop</button>
+        <button onclick="controlsONAudio()">Aktifkan Controls</button>
+        <button onclick="controlsOFFAudio()">Matikan Controls</button>
+        <button onclick="durasiAudio()">Cek Durasi</button>
+        <button onclick="hide()">Hidden</button>
+        <button onclick="unhide()">Unhidden</button>
+    <br><br>
+    <audio id="rezaaudio">
+        <source src="hujan.mp3" type="audio/mpeg">
+        Browser tidak support bosku.
+    </audio>
+    <br><br>
+   <script>
+        var reza2 = document.getElementById("rezaaudio");
+        
+        function muterAudio(){
+            reza2.play();
+        }
+        function mandekAudio(){
+            reza2.pause();
+        }
+        function loopONAudio(){
+            reza2.loop = true;
+        }
+        function loopOFFAudio(){
+            reza2.loop = false;
+        }
+        function controlsONAudio(){
+            reza2.controls = true;
+        }
+        function controlsOFFAudio(){
+            reza2.controls = false;
+        }
+        function durasiAudio(){
+            alert(reza2.duration);
+        }
+        function hide(){
+            reza2.hidden = true;
+        }
+        function unhide(){
+            reza2.hidden = false;
+        }
+        
+        
+    </script>
+</body>
