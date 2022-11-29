@@ -1,0 +1,1 @@
+alert('ini js allert yang tampil di windows ygy');
