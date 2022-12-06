@@ -60,7 +60,7 @@
                         data += '<tr>';
                         data +=  '<td>' +i+ '</td>';
                         data += '<td>' +this.mhs[i]+ '</td>';    
-                        data += '<td><button class="btn btn-danger" onclick="app.Del('+i+')">Delete</button></td>';
+                        data += '<td><button class="btn btn-danger" onclick="app.Del('+i+')">Delete</button> <button class="btn btn-danger" onclick="app.nyobapdet('+i+')">Update</button></td>';
                         data += '</tr>';    
                     }
                 }
@@ -88,14 +88,19 @@
                 this.mhs.splice(data,1);
                 app.barisAll();
             }
+        
+        //fungsi untuk update data yang ada
+        this.nyobapdet = function(data) {
+            var ngapdetdata = prompt(this.mhs[data], "Ketikan nama terbaru disini...");
+            if (ngapdetdata) {
+                this.mhs[data]=ngapdetdata;
+            } 
+                app.barisAll();
         }
+    }
+        //nampiliin semua
         app.barisAll()
 
-        /*Referensi*/
-        //1, https://owncloud.dinus.ac.id/s/qsftK8IKsnvgiwT?path=%2Fsesi11#pdfviewer
-        //2, https://www.w3schools.com/js/js_array_methods.asp
-        //3, https://www.youtube.com/watch?v=MnKVvUA_4to
-        //4, https://www.youtube.com/results?search_query=javascript+push+method+array+push
     </script>
     <div class="mt-3"></div>
 </body>
