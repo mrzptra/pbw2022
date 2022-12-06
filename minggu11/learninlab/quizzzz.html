@@ -91,10 +91,8 @@
         
         //fungsi untuk update data yang ada
         this.nyobapdet = function(data) {
-            var ngapdetdata = prompt(this.mhs[data], "Ketikan nama terbaru disini...");
-            if (ngapdetdata) {
-                this.mhs[data]=ngapdetdata;
-            } 
+            //alert bisa input form, prompt("Enter your name : ", "your name here");
+                this.mhs[data]= prompt(this.mhs[data], "Ketikan nama terbaru disini...");
                 app.barisAll();
         }
     }
